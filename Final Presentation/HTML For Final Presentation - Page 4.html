@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Object and Average Score!</h1>
+    <nav aria-label="Main navigation">
+        <ul class="nav-list">
+            <li><a href="HTML For Final Presentation.html">Home</a></li>
+            <li><a href="HTML For Final Presentation - Page 2.html" aria-current="page">Video & Audio</a></li>
+            <li><a href="HTML For Final Presentation - Page 3.html">CSS Styling</a></li>
+            <li><a href="HTML For Final Presentation - Page 4.html">JavaScript</a></li>
+            <li><a href="HTML For Final Presentation - Page 5.html">HTML Tables</a></li>
+            <li><a href="HTML For Final Presentation - Page 6.html">Contact</a></li>
+        </ul>
+    </nav>
+    <p>Open and the console (F12) or (fn+F12) and click the buttons to see the output</p>
+    <h1>Student Object</h1>
+    <button onclick="showStudentInfo()">Show Student Info</button>
+    <button onclick="addNewSubject()">Add Subject</button>
+    <h1>Rest Parameters</h1>
+    <button onclick="calculateAndShowAverage()">Calculate Average (90,60,78,81)</button>
+    <script>
+        //Student Object
+        const student = {
+            name:"Joshua Seecharan",
+            age: 18,
+            subjects: ["Operating Systems", "Web Programming and Design"],
+
+            addSubject(subject) {
+                this.subjects.push(subject);
+                console.log(`Added subject: ${subject}`);
+            },
+
+            displayInfo() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Age: ${this.age}` );
+                console.log(`Subject: ${this.subjects.join(", ")}`);
+            }
+        };
+
+        function showStudentInfo(){
+           student.displayInfo();
+        }
+
+        function addNewSubject() {
+            student.addSubject("Algorithms and Problem Solving");
+            console.log("Updated Subject List:");
+            student.displayInfo();
+        }  
+        
+        //Rest Parameters Function
+        function calculateAverage(...scores) {
+           const sum = scores.reduce((total, num) => total + num, 0);
+           return sum / scores.length;
+        }
+
+        function calculateAndShowAverage() {
+            const avg = calculateAverage(90,60,78,81);
+            console.log(`Average Score: ${avg}`);
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025, My Final Presentation</p>
+    </footer>
+</body>
+</body>
+</html>

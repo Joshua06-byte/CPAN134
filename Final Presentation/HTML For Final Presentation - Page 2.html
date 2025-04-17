@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Examples | Joshua Seecharan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Media Examples</h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <ul class="nav-list">
+            <li><a href="HTML For Final Presentation.html">Home</a></li>
+            <li><a href="HTML For Final Presentation - Page 2.html" aria-current="page">Video & Audio</a></li>
+            <li><a href="HTML For Final Presentation - Page 3.html">CSS Styling</a></li>
+            <li><a href="HTML For Final Presentation - Page 4.html">JavaScript</a></li>
+            <li><a href="HTML For Final Presentation - Page 5.html">HTML Tables</a></li>
+            <li><a href="HTML For Final Presentation - Page 6.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="media-demo">
+            <h2>Video Example</h2>
+            <div class="video-container">
+                <video controls width="640" height="360" aria-label="Demonstration video">
+                    <source src="Video Example.mp4" type="video/mp4">
+                    <track kind="captions" src="captions.vtt" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="media-source">
+                    <a href="https://www.youtube.com/watch?v=JFEMy0G_e1A" target="_blank" rel="noopener noreferrer">
+                        View original video on YouTube
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section class="media-demo">
+            <h2>Audio Example</h2>
+            <div class="audio-container">
+                <audio controls aria-label="Sample audio track">
+                    <source src="Kiss of Life.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="media-source">
+                    <a href="https://www.youtube.com/watch?v=uEcKk2U_U7A" target="_blank" rel="noopener noreferrer">
+                        View original song on YouTube
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Joshua Seecharan - My Final Presentation</p>
+        <p class="accessibility-statement">This website is designed with accessibility in mind.</p>
+    </footer>
+</body>
+</html>

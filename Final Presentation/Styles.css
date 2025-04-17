@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: antiquewhite;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-style: oblique;
+    padding: 15px;
+}
+
+a[href] {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+header, main, footer {
+    padding: 10px 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Additional common styles */
+.css-box {
+    border: 2px solid blueviolet;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: lavender;
+    border-radius: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    display: block;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+img {
+    margin: 10px;
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
